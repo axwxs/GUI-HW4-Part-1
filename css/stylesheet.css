@@ -1,0 +1,104 @@
+/*
+Full Name: Ali Rashid
+Date Created: 11/2/2022
+*/
+
+/* Centers header */
+.page-header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Centers instructions and spaces bottom */
+.instructions {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 20px
+}
+
+/* Centers instructions */
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* Adds some button styling and rounding */
+.input-group button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-weight: bold;
+    background: #00818d;
+    color: white;
+    border-radius: 5px;
+    width: 100%
+}
+
+/* Stacks the inputs vertically */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Makes the error message red and centered */
+.error-message {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+/* Wrapper that centers table, makes it take up max 80% of viewing screen, and makes overflow scrollable */
+.main-table-container {
+    margin: 0 auto;
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+/* Centers actual table within its wrapper */
+table {
+    margin: auto;
+}
+
+/* Makes the border one solid black line */
+table, th, td {
+    border-collapse: collapse;
+    border: black 1px solid;
+}
+
+/* Adds a little padding to table cells/headers and centers data */
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Gives distinct styling to table header cells */
+th {
+    background-color: #00818d;
+    color: white;
+    font-weight: bold;
+}
+
+/* Gives the standard table cells styling and bolds the font */
+td {
+    background-color: #e6e6e6;
+    font-weight: bold;
+    min-width: max-content;
+}
+
+/* Creates an alternating table row color */
+tr:nth-child(2n+2) td {
+    background-color: #f9f7ff;
+    text-align: center;
+}
+
+/* Makes the first (blank) table cell in the top left not inherit styling from above */
+table td:first-child {
+    background-color: white;
+    text-align: center;
+}
+

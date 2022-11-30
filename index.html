@@ -1,0 +1,41 @@
+<!--
+Full Name: Ali Rashid
+Date Created: 11/29/2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src="js/multiplication.js"></script>
+
+</head>
+<body>
+<h2 class="page-header">Multiplication Table Generator</h2>
+<p class="instructions">
+    Please enter integer values between -50 and 50 for the maximum and minimum values for both the columns and rows in order to generate a multiplication table
+</p>
+<p class="instructions">
+    The maximum value for the columns and rows must be greater than the minimum value for the columns and rows. Also any non-integer values will be truncated (ex. 1.5 will be 1).
+</p>
+
+
+<div class="input-group">
+    <form id="numberInputForm">
+        <input type="text" id='colMin' name='colMin' placeholder='column min value'/>
+        <input type="text" id='colMax' name='colMax' placeholder='column max value'/>
+        <input type="text" id='rowMin' name='rowMin' placeholder='row min value'/>
+        <input type="text" id='rowMax' name='rowMax' placeholder='row max value'/>
+<!--        <button type='button' onclick="return create_table()">Generate Table</button>-->
+        <button type="submit" id="submit">Generate Table</button>
+
+    </form>
+</div>
+<div class="main-table-container"></div>
+</body>
+</html>
