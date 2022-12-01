@@ -102,3 +102,15 @@ table td:first-child {
     text-align: center;
 }
 
+
+/* Makes the error messages red and bold */
+.error {
+    display: flex;
+    justify-content: center;
+    color: red;
+    /*text-transform: uppercase;*/
+    font-weight: bolder;
+}
+
+
+

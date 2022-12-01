@@ -87,27 +87,6 @@ create_table = function() {
     var maxRowValue = Math.max(vals[2], vals[3])
 
 
-    /*
-
-    // Error checking
-    try {
-        if(cStartValue === "" || cEndValue === "" || rStartValue === "" || rEndValue === "")  throw "One or more of the input values are empty";
-        if(isNaN(minColValue) || isNaN(maxColValue) || isNaN(minRowValue) || isNaN(maxRowValue)) throw "One or more of the input values is not a number";
-        if(minColValue < -50 || minRowValue < -50)  throw "One or more of the input values is less than -50";
-        if(maxColValue > 50 || maxRowValue > 50)  throw "One or more of the input values is greater than 50";
-        if ((!isInt(minColValue) || !isInt(maxColValue) || !isInt(minRowValue) || !isInt(maxRowValue))) throw "One or more of the input values is not an integer";
-
-        if(parseInt(cEndValue) < parseInt(cStartValue)) throw "The maximum column value is less than the minimum column value";
-        if(parseInt(rEndValue) < parseInt(rStartValue)) throw "The maximum row value is less than the minimum row value";
-    }
-    catch(err) {
-        mainTable.innerHTML = `<h3 class="error-message">Error: ${err}<br>Please try again</h3>`;
-        return;
-    }
-
-     */
-
-
     // Creates the actual result table w/o the headers
     var newTable = document.createElement("table")
     newTable.setAttribute("id", "newTable")
